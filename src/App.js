@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Botao from './components/Botao'
 import './estilo.css'
 
 
@@ -23,7 +24,6 @@ class App extends Component{
 
 
     quebrarBiscoito = () => {
-        let  state = this.state
         let numeroAleatorio = Math.floor(Math.random() * this.frases.length)
         this.setState({textoFrase: this.frases[numeroAleatorio]})
     }
@@ -35,7 +35,7 @@ class App extends Component{
                
             <div className="container">
               <img className="img" alt="biscoito" src={require('./assets/biscoito.png')} /><br />
-              <Botao acao={this.quebrarBiscoito} className="botao" nome="ABRIR BISCOITO"/>
+              <Botao acao={this.quebrarBiscoito} className="botao" nome="ABRIR BISCOITO" />
               {console.log(this.frases.length - 1)}
               <h3 className="textoFrase">{this.state.textoFrase}</h3>
             </div>
@@ -44,15 +44,5 @@ class App extends Component{
 }
 
 
-class Botao extends Component{
-    
 
-    render(){
-        return(
-            <button onClick={this.props.acao} className={this.props.className}>{this.props.nome}</button>
-        )
-    }
-
-
-}
 export default App
