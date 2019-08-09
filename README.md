@@ -1,5 +1,3 @@
-Biscoito da Sorte
-
-Feito em React
+Biscoito da sorte feito em React.
 
 Em breve [live demo](#) 
