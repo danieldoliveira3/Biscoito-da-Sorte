@@ -1,3 +1,3 @@
-Biscoito da sorte feito em React.
+Biscoito da Sorte feito em React. Um dos primeiros projetos que fiz em React para entender os conceitos de props e state.
 
-Em breve [live demo](#) 
+[Clique para ver o projeto](https://bdasorte.vercel.app)
